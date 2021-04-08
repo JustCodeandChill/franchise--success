@@ -1,0 +1,41 @@
+.zoom:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.custom-container {
+    width: 85%; 
+    margin: 0 auto; 
+}
+
+.bold {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .zoom {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .zoom:hover{
+        transform: scale(1);
+        transition: all .5s;
+    }
+    .title h4{
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+    }
+    div .card {
+        margin: 2px;
+    }
+    div .card-content {
+        padding: 0;
+        margin: 1px;
+    }
+}

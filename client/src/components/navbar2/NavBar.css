@@ -1,0 +1,112 @@
+.franchise-logo {
+  height: 60px;
+  width: 200px;
+  margin-left: 24vw;
+  /* background-color: red; */
+}
+
+.nav-bar {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.nav-btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 1px solid #212121;
+  cursor: pointer;
+  display: inline-block;
+}
+.menu-btn {
+  height: 100%;
+  padding: 20px 0;
+  width: 120px;
+}
+.contact-btn {
+  height: 100%;
+  float: right;
+  width: 130px;
+  background-color: #ff5722;
+  color: white;
+  font-weight: 600;
+}
+
+.menu-btn span {
+  padding-top: 3px;
+}
+/* Side bar */
+.side-bar {
+  color: red;
+  height: 100%;
+  width: 0;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eeeeee;
+  overflow-x: hidden;
+  transition: 0, 5s;
+}
+/*Drop down */
+.side-bar .dropdown-btn,
+.side-bar .side-btn {
+  width: 100%;
+  height: auto;
+  font-size: 1.2rem;
+  padding: 20px 0 20px 5px;
+  text-align: left;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 1px solid #b0bec5;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.dropdown-container {
+  background-color: #262626;
+  background-color: #eeeeee;
+  display: block;
+}
+
+.side-bar .dropdown-container a {
+  display: block;
+  padding: 7px 0 7px 5px;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-size: 1rem;
+  color: black;
+  border: 1px solid #b0bec5;
+  cursor: pointer;
+}
+
+.side-bar .side-btn a,
+.side-bar .side-btn .a:hover {
+  color: black;
+}
+/* Animation */
+.open {
+  width: 250px;
+  transition: 0.5s;
+}
+
+.close {
+  width: 0px;
+  transition: 0.5s;
+}
+
+.openDD {
+  display: block;
+}
+
+.closeDD {
+  display: none;
+}
+
+.ppushToRight {
+  margin-left: 50px;
+}
+
+@media (max-width: 662px) {
+  .franchise-logo {
+   margin-left: 5vw;
+  }
+}

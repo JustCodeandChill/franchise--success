@@ -1,0 +1,94 @@
+.section {
+  width: 98%;
+}
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+/* Animation */
+.box-focus:hover {
+  -webkit-box-shadow: 1px 1px 13px 4px rgba(129, 212, 250, 1);
+  -moz-box-shadow: 1px 1px 13px 4px rgba(129, 212, 250, 1);
+  box-shadow: 1px 1px 13px 4px rgba(129, 212, 250, 1);
+  transition: all 0.25s;
+}
+
+.box-zoom:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+  transition: all 0.75s;
+}
+.text-red:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 13px 4px rgba(129, 212, 250, 1);
+  -moz-box-shadow: 1px 1px 13px 4px rgba(129, 212, 250, 1);
+  box-shadow: 1px 1px 13px 4px rgba(129, 212, 250, 1);
+}
+
+.zoom-text {
+  text-decoration: underline;
+}
+
+.zoom:hover i {
+  color: blue;
+}
+
+.pushToRight {
+  margin-left: 200px;
+  transition: 0.5s;
+}
+
+.newWidth {
+  width: 100vw;
+}
+.notPushToRight {
+  margin-left: 0;
+  transition: 0.5s;
+}
+.horizontal-list {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.horizontal-list img {
+  width: 17%;
+  margin: 10px;
+  height: 120px;
+}
+/* Media */
+@media only screen and (min-width: 993px) {
+}
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+  .horizontal-list img {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .horizontal-list img {
+    width: 40%;
+  }
+}
